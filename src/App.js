@@ -1,9 +1,15 @@
-function App() {
+import React from "react";
+import Header from './componets/header/Header';
+import Footer from "./componets/footer/Footer";
+import Main from "./componets/main/Main";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-      </header>
-    </div>
+      <>
+        <Header />
+        <Main />
+        <Footer />
+      </>
   );
 }
 
