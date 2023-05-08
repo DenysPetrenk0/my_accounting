@@ -1,14 +1,17 @@
 import React from "react";
 import Header from './componets/header/Header';
-import Footer from "./componets/footer/Footer";
 import Main from "./componets/main/Main";
+import {ContainerStyled} from "./componets/container/containerStyled";
+import Footer from "./componets/footer/Footer";
 
 const App = () => {
   return (
       <>
-        <Header />
-        <Main />
-        <Footer />
+          <ContainerStyled>
+              <Header />
+              <Main />
+              <Footer />
+          </ContainerStyled>
       </>
   );
 }
