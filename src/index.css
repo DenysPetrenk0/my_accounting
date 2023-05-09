@@ -13,7 +13,7 @@ html {
 
 body {
   color: #000000;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Poppins', sans-serif;
   line-height: 1.2;
   letter-spacing: 0.03em;
   width: 100%;
@@ -59,16 +59,16 @@ a {
   position: relative;
 }
 
-@media screen and (min-width: 580px) {
-  .container {
-    max-width: 610px;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
+/*@media screen and (min-width: 580px) {*/
+/*  .container {*/
+/*    max-width: 610px;*/
+/*    padding-right: 15px;*/
+/*    padding-left: 15px;*/
+/*  }*/
+/*}*/
 
-@media screen and (min-width: 1180px) {
-  .container {
-    max-width: 1210px;
-  }
-}
+/*@media screen and (min-width: 1180px) {*/
+/*  .container {*/
+/*    max-width: 1210px;*/
+/*  }*/
+/*}*/

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
-export const HeadeerListStyled = styled.ul`
-  display: flex;
+export const NavigationStyled = styled.ul`
+  border-right: 2px solid ${(props) => props.colors.darkColors.text};
+  width: 290px;
 
   .headerListItem:not(:last-child) {
     margin-right: 10px;

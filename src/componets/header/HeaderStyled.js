@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
-  height: 60px;
-  border-bottom: 3px solid ${(props) => props.colors.darkColors.main};
+  height: 83px;
+  border-bottom: 2px solid ${(props) => props.colors.darkColors.text};
   background-color: ${(props) => props.colors.darkColors.background};
   display: flex;
   align-items: center;

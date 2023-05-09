@@ -1,12 +1,14 @@
 import React from "react";
 import {MainStyled} from "./MainStyled";
-import ContentSwitcher from "../../contentSwitcher/contentSwitcher";
-import {headerRoutes} from "../../routes/headerRoutes";
+import Navigation from "../navigation/Navigation";
+import Content from "../content/Content";
+import colors from "../../style/colors";
 
 const Main = () => {
   return (
-      <MainStyled>
-        <ContentSwitcher routes={headerRoutes}/>
+      <MainStyled colors = {colors}>
+        <Navigation />
+        <Content />
       </MainStyled>
   );
 };

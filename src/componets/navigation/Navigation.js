@@ -1,13 +1,12 @@
 import React from "react";
-import colors from "../../../style/colors";
-import {HeadeerListStyled} from "./HeaderListStyled";
+import colors from "../../style/colors";
 import {NavLink} from "react-router-dom";
-import {headerRoutes} from "../../../routes/headerRoutes";
-
-const HeaderList = () => {
+import {NavigationStyled} from "./NavigationStyled";
+import {navigationRoutes} from "../../routes/navigationRoutes"
+const Navigation = () => {
     return(
-        <HeadeerListStyled colors={colors}>
-            {headerRoutes.map(({path, name}) => (
+        <NavigationStyled colors={colors}>
+            {navigationRoutes.map(({path, name}) => (
                 <li key={path} className="headerListItem">
                     <NavLink
                         to={path}
@@ -18,8 +17,8 @@ const HeaderList = () => {
                     </NavLink>
                 </li>
             ))}
-        </HeadeerListStyled>
+        </NavigationStyled>
     );
 }
 
-export default HeaderList;
+export default Navigation;

@@ -3,8 +3,8 @@
 export const darkColors = {
   primary: "#424242",
   secondary: "#3D3D3D",
-  background: "#212121",
-  text: "#FFFFFF",
+  background: "#1E0338",
+  text: "#F0F0F0",
   main: "#819FF5",
   active: "#5F73A1",
   title: "#FFFFFF",
