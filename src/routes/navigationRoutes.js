@@ -3,7 +3,7 @@ import MonthPage from "../pages/month/MonthPage";
 import CakePage from "../pages/cake/CakePage";
 import HomePage from "../pages/home/homePage";
 
-export const headerRoutes = [
+export const navigationRoutes = [
     {
         path: "/",
         exact: true,
