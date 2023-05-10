@@ -7,10 +7,10 @@ const Navigation = () => {
     return(
         <NavigationStyled colors={colors}>
             {navigationRoutes.map(({path, name}) => (
-                <li key={path} className="headerListItem">
+                <li key={path} className="navListItem">
                     <NavLink
                         to={path}
-                        className="headerListLink"
+                        className="vanListLink"
                         activeClassName="activHeaderListLink"
                     >
                         {name}

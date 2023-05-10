@@ -7,12 +7,19 @@ export const HeaderStyled = styled.header`
   display: flex;
   align-items: center;
   padding: 0 40px;
-  justify-content: space-between;
 
-  .headerLogo {
-    font-weight: 700;
-    font-size: 20px;
-    color: ${(props) => props.colors.darkColors.main};
-    text-transform: uppercase;
+  .header {
+    
+    &__logo {
+      font-weight: 700;
+      font-size: 20px;
+      color: ${(props) => props.colors.darkColors.text};
+      text-transform: uppercase;
+    }
+    
+    &__logo__icon {
+      margin-right: 10px;
+      fill: ${(props) => props.colors.darkColors.text};
+    }
   }
 `;

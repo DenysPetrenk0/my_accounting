@@ -19,6 +19,7 @@ body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+  margin: 0;
 }
 
 h1,
@@ -45,14 +46,6 @@ ul {
 a {
   outline: none;
   text-decoration: none;
-}
-
-.container {
-  max-width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-right: 25px;
-  padding-left: 25px;
 }
 
 #root {

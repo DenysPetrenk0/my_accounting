@@ -1,11 +1,14 @@
 import React, {Component} from "react";
+import {AddCakeStyled} from "./AddCakeStyled";
+import colors from "../../style/colors";
 
 class AddCake extends Component {
 
     state = {
         name: "",
         cake: "",
-        cost: ""
+        cost: "",
+        phone: ""
     };
 
     onHandleChange = (event) => {
@@ -20,41 +23,50 @@ class AddCake extends Component {
     }
 
     render() {
-        const {name, cake, cost} = this.state;
+        const {name, cake, phone, cost} = this.state;
 
         return (
-            <form onSubmit={this.onSubmit}>
+            <AddCakeStyled onSubmit={this.onSubmit} colors = {colors}>
                 <label>
-                    name:
                     <input
                         value={name}
                         type="text"
                         name="name"
                         autoComplete="off"
                         onChange={this.onHandleChange}
+                        placeholder="name:"
                         required
                     />
-                    cake:
                     <input
                         value={cake}
                         type="text"
                         name="cake"
                         autoComplete="off"
                         onChange={this.onHandleChange}
+                        placeholder="cake:"
                         required
                     />
-                    cost:
+                    <input
+                        value={phone}
+                        type="tel"
+                        name="phone"
+                        autoComplete="off"
+                        onChange={this.onHandleChange}
+                        placeholder="phone:"
+                        required
+                    />
                     <input
                         value={cost}
                         type="number"
                         name="cost"
                         autoComplete="off"
                         onChange={this.onHandleChange}
+                        placeholder="cost:"
                         required
                     />
                     <button type="submit">add</button>
                 </label>
-            </form>
+            </AddCakeStyled>
         );
     }
 }
