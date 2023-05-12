@@ -6,7 +6,6 @@ const CakePage = () => {
 
   return(
       <CakePageStyled>
-          <h2>CakePage</h2>
           <AddCake />
       </CakePageStyled>
   );

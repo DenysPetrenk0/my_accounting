@@ -9,27 +9,31 @@ export const navigationRoutes = [
         exact: true,
         component: HomePage,
         restricted: true,
-        name: "Домой"
+        name: "Домой",
+        icon: "#home"
     },
     {
         path: "/week",
         exact: true,
         component: WeekPage,
         restricted: true,
-        name: "Неделя"
+        name: "Неделя",
+        icon: "#week"
     },
     {
         path: "/month",
         exact: true,
         component: MonthPage,
         restricted: true,
-        name: "Месяц"
+        name: "Месяц",
+        icon: "#month"
     },
     {
         path: "/cake",
         exact: true,
         component: CakePage,
         restricted: true,
-        name: "Торты"
+        name: "Торты",
+        icon: "#cake"
     },
 ];
