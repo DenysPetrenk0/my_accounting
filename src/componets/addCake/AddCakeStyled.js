@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AddCakeStyled = styled.form `
-  margin-left: 230px;
+  margin-left: 210px;
   
   input {
     border: 1px solid ${(props) => props.colors.darkColors.text};
@@ -27,6 +27,16 @@ export const AddCakeStyled = styled.form `
       line-height: 2;
       letter-spacing: 0.1px;
       color: ${(props) => props.colors.darkColors.text};
+    }
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &[type=number]{
+      -moz-appearance: textfield;
     }
   }
   

@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import {AddCakeStyled} from "./AddCakeStyled";
 import colors from "../../style/colors";
+import {connect} from "react-redux";
+import {addCakeOperation, getCakeOperation} from "../../redux/Cake/cakeOperation";
 
 class AddCake extends Component {
 
@@ -11,6 +13,10 @@ class AddCake extends Component {
         phone: ""
     };
 
+    componentDidMount= () => {
+        // this.props.getCakeOperation();
+    }
+
     onHandleChange = (event) => {
         const {name, value} = event.target;
         this.setState({[name]: value })
@@ -18,8 +24,10 @@ class AddCake extends Component {
     };
 
     onSubmit = (event) => {
+        const {name, cake, cost, phone} = this.state;
         event.preventDefault();
-        console.log(this.state)
+        this.props.addCakeOperation({name, cake, cost, phone});
+        this.setState({name: "", cake: "", cost: "", phone: ""});
     }
 
     render() {
@@ -71,4 +79,11 @@ class AddCake extends Component {
     }
 }
 
-export default AddCake;
+const mapStateToProps = (state) => {
+    return {
+        cake: state.cake
+    };
+};
+
+export default connect(mapStateToProps, {addCakeOperation, getCakeOperation}) (AddCake);
+// export default AddCake;
