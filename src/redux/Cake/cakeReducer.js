@@ -1,5 +1,5 @@
 import {combineReducers} from "@reduxjs/toolkit";
-import {createReducer} from "@reduxjs/toolkit/src";
+import {createReducer} from "@reduxjs/toolkit";
 import {
     addCakeError,
     addCakeRequest,

@@ -1,5 +1,5 @@
 import {configureStore, getDefaultMiddleware} from "@reduxjs/toolkit";
-import cakeReducer from "./Cake/reducerCake";
+import cakeReducer from "./Cake/cakeReducer";
 import {FLUSH, PAUSE, PERSIST, PURGE, REGISTER, REHYDRATE} from "redux-persist";
 
 const store = configureStore({
