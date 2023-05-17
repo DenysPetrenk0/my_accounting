@@ -13,14 +13,28 @@ export const ItemCakeStyled = styled.li `
     
     &__text {
       display: flex;
-      justify-content: space-between;
+      
+      & p {
+        width: 100px;
+        margin-right: 10px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        color: ${(props) => props.colors.darkColors.title};
+      }
     }
   }
-  
-  p {
+
+  button {
+    width: 91px;
+    height: 27px;
+    border-radius: 20px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 12px;
+    line-height: 1.5;
     color: ${(props) => props.colors.darkColors.title};
+    background: #5DF888;
   }
 `;
