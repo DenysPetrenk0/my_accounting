@@ -14,7 +14,7 @@ class AddCake extends Component {
     };
 
     componentDidMount= () => {
-        // this.props.getCakeOperation();
+        this.props.getCakeOperation();
     }
 
     onHandleChange = (event) => {
@@ -86,4 +86,3 @@ const mapStateToProps = (state) => {
 };
 
 export default connect(mapStateToProps, {addCakeOperation, getCakeOperation}) (AddCake);
-// export default AddCake;

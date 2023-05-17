@@ -12,6 +12,12 @@ import {
     getCakeSuccess
 } from "./cakeAction";
 
+const itemsReducer = createReducer([], {
+    [getCakeSuccess]: (_, {payload}) => payload,
+    [addCakeSuccess]: (state, {payload}) => [...state, payload],
+    [deleteCakeSuccess]: (state, {payload}) => state.filter((item) => item.id !== payload)
+});
+
 const loadingReducer = createReducer(false, {
     [getCakeRequest]: () => true,
     [getCakeSuccess]: () => false,
@@ -28,6 +34,7 @@ const errorReducer = createReducer(null, {
 });
 
 const cakeReducer = combineReducers({
+    items: itemsReducer,
     loading: loadingReducer,
     error: errorReducer
 });
