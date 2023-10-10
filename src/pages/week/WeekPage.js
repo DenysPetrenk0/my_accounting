@@ -5,86 +5,59 @@ import arrowIcon from "../week/icon/arrow.svg";
 
 const WeekPage = () => {
   return(
-    <WeekPageStyled colors={colors}>
-      <h2 className="week__current-day">04.10.2023</h2>
-      <div className="week__container">
-          <button type="button" className="week__button-arrow">
-              <svg className="week__button-arrow__icon" height="17" width="17">
-                  <use href={arrowIcon + "#arrow-left"}></use>
-              </svg>
-          </button>
-          <ul className="week__list">
-              <li className="week__item">
-                  <div className="week__item__name">
-                      <h2 className="week__item__title">Понеділок</h2>
-                      <p className="week__item__date">04.10.2023</p>
-                  </div>
-                  <div className="week__item__content">
-                      <p className="week__item__count">1000</p>
-                  </div>
-              </li>
-              <li className="week__item">
-                  <div className="week__item__name">
-                      <h2 className="week__item__title">Вівторок</h2>
-                      <p className="week__item__date">04.10.2023</p>
-                  </div>
-                  <div className="week__item__content">
-                      <p className="week__item__count">1000</p>
-                  </div>
-              </li>
-              <li className="week__item">
-                  <div className="week__item__name">
-                      <h2 className="week__item__title">Середа</h2>
-                      <p className="week__item__date">04.10.2023</p>
-                  </div>
-                  <div className="week__item__content">
-                      <p className="week__item__count">1000</p>
-                  </div>
-              </li>
-              <li className="week__item">
-                  <div className="week__item__name">
-                      <h2 className="week__item__title">Четверг</h2>
-                      <p className="week__item__date">04.10.2023</p>
-                  </div>
-                  <div className="week__item__content">
-                      <p className="week__item__count">1000</p>
-                  </div>
-              </li>
-              <li className="week__item">
-                  <div className="week__item__name">
-                      <h2 className="week__item__title">П'ятниця</h2>
-                      <p className="week__item__date">04.10.2023</p>
-                  </div>
-                  <div className="week__item__content">
-                      <p className="week__item__count">1000</p>
-                  </div>
-              </li>
-              <li className="week__item">
-                  <div className="week__item__name">
-                      <h2 className="week__item__title">Субота</h2>
-                      <p className="week__item__date">04.10.2023</p>
-                  </div>
-                  <div className="week__item__content">
-                      <p className="week__item__count">1000</p>
-                  </div>
-              </li>
-              <li className="week__item">
-                  <div className="week__item__name">
-                      <h2 className="week__item__title">Неділя</h2>
-                      <p className="week__item__date">04.10.2023</p>
-                  </div>
-                  <div className="week__item__content">
-                      <p className="week__item__count">1000</p>
-                  </div>
-              </li>
-          </ul>
-          <button type="button" className="week__button-arrow">
-              <svg className="week__button-arrow__icon" height="17" width="17">
-                  <use href={arrowIcon + "#arrow-right"}></use>
-              </svg>
-          </button>
-      </div>
-    </WeekPageStyled>
+      <WeekPageStyled colors={colors}>
+          <div className="week__number">
+              <h2 className="week__number__current-day">04.10.2023</h2>
+              <div className="week__number__box">
+                  <button type="button" className="week__number__button-arrow">
+                      <svg className="week__number__button-arrow__icon" height="17" width="17">
+                          <use href={arrowIcon + "#arrow-left"}></use>
+                      </svg>
+                  </button>
+                  <h2 className="week__number__current-week">04.10.2023 - 11.10.2023</h2>
+                  <button type="button" className="week__number__button-arrow">
+                      <svg className="week__number__button-arrow__icon" height="17" width="17">
+                          <use href={arrowIcon + "#arrow-right"}></use>
+                      </svg>
+                  </button>
+              </div>
+              <form>
+                  <label className="week__number__add">
+                      <input className="week__number__add-input" type="text" placeholder="додати графу"/>
+                      <buttom className="week__number__button-add">
+                          <svg className="week__number__button-add__icon" height="17" width="17">
+                              <use href={arrowIcon + "#plus"}></use>
+                          </svg>
+                      </buttom>
+                  </label>
+              </form>
+          </div>
+          <div className="week__content">
+              <div className="week__content__box">
+                  <p className="week__content__title">назва</p>
+                  <p className="week__content__title">понеділок</p>
+                  <p className="week__content__title">вівторок</p>
+                  <p className="week__content__title">середа</p>
+                  <p className="week__content__title">четверг</p>
+                  <p className="week__content__title">п'ятниця</p>
+                  <p className="week__content__title">субота</p>
+                  <p className="week__content__title">неділя</p>
+              </div>
+              <form className="week__content__form">
+                  <label className="week__content__form__label">
+                      <input type="text" className="week__content__form__input"/>
+                      <button></button>
+                      <input type="text" className="week__content__form__input"/>
+                      <input type="text" className="week__content__form__input"/>
+                      <input type="text" className="week__content__form__input"/>
+                      <input type="text" className="week__content__form__input"/>
+                      <input type="text" className="week__content__form__input"/>
+                      <input type="text" className="week__content__form__input"/>
+                      <input type="text" className="week__content__form__input"/>
+                  </label>
+              </form>
+          </div>
+      </WeekPageStyled>
   );
 };
 
