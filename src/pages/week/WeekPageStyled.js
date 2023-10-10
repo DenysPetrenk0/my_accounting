@@ -4,76 +4,116 @@ export const WeekPageStyled = styled.div `
     
   .week {
     
-    &__container {
+    &__number {      
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       align-items: center;
-    }
-    
-    &__current-day {
-      text-align: right;
       margin-top: 40px;
       margin-bottom: 40px;
-      margin-right: 40px;
-      color: ${(props) => props.colors.darkColors.title};
-      font-weight: 600;
-      font-size: 27px;
-      line-height: 1.5;
-    }
-    
-    &__list {
-      display: flex;
-    }
-    
-    &__item {
-      height: 200px;
-      width: 130px;
-      border: 2px solid ${(props) => props.colors.darkColors.text};
-      border-radius: 20px;
-      color: ${(props) => props.colors.darkColors.title};
-      font-style: normal;
-      text-align: center;
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 1.5;
-      overflow: hidden;
       
-      &:not(:last-child) {
-        margin-right: 5px;
-      }
-      
-      &__name {
-        padding: 5px 0;
-        background: ${(props) => props.colors.darkColors.attention};
-      }
-      
-      &__count {
-        margin-top: 30px;
-        font-size: 17px;
+      &__box {
+        display: flex;
+        align-items: center;
       }
 
-      &:hover {
-        scale: 1.05;
+      &__current-day {
+        color: ${(props) => props.colors.darkColors.title};
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 1.5;
+      }
+
+      &__current-week {
+        color: ${(props) => props.colors.darkColors.title};
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 1.5;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+
+      &__button-arrow,
+      &__button-add {
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
+        border: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+          scale: 1.5;
+        }
+
+        &__icon {
+          fill: ${(props) => props.colors.darkColors.title};
+        }
+      }
+      
+      &__add {
+        display: flex;
+        
+        &-input {
+          width: 225px;
+          height: 40px;
+          margin-right: 10px;
+          border-radius: 100px;
+          border: 1px solid ${(props) => props.colors.darkColors.title};
+          background: ${(props) => props.colors.darkColors.background};
+          padding-left: 15px;
+          color: ${(props) => props.colors.darkColors.title};
+          
+          &::placeholder {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 1.5;
+            opacity: 0.5;
+            color: ${(props) => props.colors.darkColors.title};
+          }
+        }
       }
     }
     
-    &__button-arrow {
-      border-radius: 50%;
-      height: 44px;
-      width: 44px;
-      background: linear-gradient(178.18deg, #FD749B -13.56%, #281AC8 158.3%);
-      border: none;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    &__content {
+      border: 2px solid ${(props) => props.colors.darkColors.text};
+      border-radius: 20px;
+      margin: 15px;
+      padding: 25px 10px;
       
-      &:hover {
-        scale: 1.5;
+      &__box {
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: space-around;
       }
       
-      &__icon {
-        fill: ${(props) => props.colors.darkColors.title};
+      &__title {
+        color: ${(props) => props.colors.darkColors.text};
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.5;
+      }
+      
+      &__form {
+        
+        &__label {
+          padding: 15px;
+          border-radius: 100px;
+          border: 1px solid ${(props) => props.colors.darkColors.title};
+        }
+        
+        &__input {
+          width: 100px;
+          height: 40px;
+          background: ${(props) => props.colors.darkColors.background};
+          color: ${(props) => props.colors.darkColors.title};
+          border: transparent;
+        }
       }
     }
   }
+  
 `;
