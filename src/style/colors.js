@@ -14,6 +14,7 @@ export const darkColors = {
   buttonText: "#FFFFFF",
   attention: "#DC143C",
   edit: "#14dc6783",
+  down: "#FF4949"
 };
 export const lightColors = {
   primary: "#FFFFFF",

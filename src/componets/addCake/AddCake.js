@@ -13,14 +13,13 @@ class AddCake extends Component {
         phone: ""
     };
 
-    componentDidMount= () => {
+    componentDidMount = () => {
         this.props.getCakeOperation();
-    }
+    };
 
     onHandleChange = (event) => {
         const {name, value} = event.target;
         this.setState({[name]: value })
-
     };
 
     onSubmit = (event) => {
@@ -28,7 +27,7 @@ class AddCake extends Component {
         event.preventDefault();
         this.props.addCakeOperation({name, cake, cost, phone});
         this.setState({name: "", cake: "", cost: "", phone: ""});
-    }
+    };
 
     render() {
         const {name, cake, phone, cost} = this.state;

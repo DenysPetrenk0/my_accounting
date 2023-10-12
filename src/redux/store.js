@@ -1,10 +1,12 @@
 import {configureStore, getDefaultMiddleware} from "@reduxjs/toolkit";
-import cakeReducer from "./Cake/cakeReducer";
 import {FLUSH, PAUSE, PERSIST, PURGE, REGISTER, REHYDRATE} from "redux-persist";
+import cakeReducer from "./Cake/cakeReducer";
+import costReducer from "./Cost/costReducer";
 
 const store = configureStore({
     reducer: {
-        cake: cakeReducer
+        cake: cakeReducer,
+        cost: costReducer
     },
     middleware: getDefaultMiddleware({
         serializableCheck: {
