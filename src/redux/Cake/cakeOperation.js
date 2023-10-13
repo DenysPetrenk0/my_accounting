@@ -27,14 +27,14 @@ export const addCakeOperation = (cake) => async (dispatch) => {
         const {data} = await axios.post("/cake", cake);
         dispatch(addCakeSuccess(data));
     } catch (error) {
-        dispatch(addCakeError());
+        dispatch(addCakeError(error));
     }
 };
 export const deleteCakeOperation = (id) => async (dispatch) => {
     dispatch(deleteCakeRequest());
     try {
         await axios.delete(`/cake/${id}`);
-        dispatch(deleteCakeSuccess(id))
+        dispatch(deleteCakeSuccess(id));
     } catch (error) {
         dispatch(deleteCakeError(error));
     }
