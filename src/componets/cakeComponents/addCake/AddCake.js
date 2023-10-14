@@ -1,8 +1,8 @@
 import React, {Component} from "react";
 import {AddCakeStyled} from "./AddCakeStyled";
-import colors from "../../style/colors";
+import colors from "../../../style/colors";
 import {connect} from "react-redux";
-import {addCakeOperation, getCakeOperation} from "../../redux/Cake/cakeOperation";
+import {addCakeOperation, getCakeOperation} from "../../../redux/Cake/cakeOperation";
 
 class AddCake extends Component {
 
@@ -41,7 +41,7 @@ class AddCake extends Component {
                         name="name"
                         autoComplete="off"
                         onChange={this.onHandleChange}
-                        placeholder="name:"
+                        placeholder="замовник"
                         required
                     />
                     <input
@@ -50,7 +50,7 @@ class AddCake extends Component {
                         name="cake"
                         autoComplete="off"
                         onChange={this.onHandleChange}
-                        placeholder="cake:"
+                        placeholder="торт"
                         required
                     />
                     <input
@@ -59,7 +59,7 @@ class AddCake extends Component {
                         name="phone"
                         autoComplete="off"
                         onChange={this.onHandleChange}
-                        placeholder="phone:"
+                        placeholder="телефон"
                         required
                     />
                     <input
@@ -68,7 +68,7 @@ class AddCake extends Component {
                         name="cost"
                         autoComplete="off"
                         onChange={this.onHandleChange}
-                        placeholder="cost:"
+                        placeholder="ціна"
                         required
                     />
                     <button type="submit">add</button>

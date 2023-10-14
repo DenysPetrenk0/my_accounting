@@ -37,9 +37,9 @@ export const AddCostStyled = styled.form `
       justify-content: center;
       align-items: center;
 
-      //&:hover {
-      //  scale: 1.5;
-      //}
+      &:hover {
+        scale: 1.1;
+      }
 
       &__icon {
         fill: ${(props) => props.colors.darkColors.title};
