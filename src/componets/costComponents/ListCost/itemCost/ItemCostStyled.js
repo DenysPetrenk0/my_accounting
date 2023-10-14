@@ -33,10 +33,18 @@ export const ItemCostStyled = styled.form `
       width: 36px;
       height: 36px;
       border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background: ${(props) => props.colors.darkColors.down};
+      cursor: default;
 
       &__icon {
         fill: ${(props) => props.colors.darkColors.title};
+      }
+      
+      &:hover {
+        scale: 1.1;
       }
     }
 
