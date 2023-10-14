@@ -1,9 +1,9 @@
 import React from "react";
 import {connect} from "react-redux";
 import {ItemCakeStyled} from "./ItemCakeStyled";
-import colors from "../../../style/colors";
-import {deleteCakeOperation} from "../../../redux/Cake/cakeOperation";
-import Button from "../../button/Button";
+import colors from "../../../../style/colors";
+import {deleteCakeOperation} from "../../../../redux/Cake/cakeOperation";
+import Button from "../../../button/Button";
 
 const ItemCake = ({cakes, deleteCakeOperation}) => {
     return cakes.map((cake) => (
@@ -28,7 +28,7 @@ const mapStateToProps = (state) => {
     return {
         cakes: state.cake.items
     }
-}
+};
 
 export default connect(mapStateToProps, {
     deleteCakeOperation

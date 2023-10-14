@@ -1,9 +1,9 @@
 import React, {Component} from "react";
 import addCostIcon from "./icon/addCostIcon.svg";
 import {AddCostStyled} from "./AddCostStyled";
-import colors from "../../style/colors";
+import colors from "../../../style/colors";
 import {connect} from "react-redux";
-import {addCostOperation, getCostOperation} from "../../redux/Cost/costOperation";
+import {addCostOperation, getCostOperation} from "../../../redux/Cost/costOperation";
 
 class AddCost extends Component {
 

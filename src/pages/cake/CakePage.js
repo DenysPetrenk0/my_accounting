@@ -1,7 +1,7 @@
 import React from "react";
-import AddCake from "../../componets/addCake/AddCake";
+import AddCake from "../../componets/cakeComponents/addCake/AddCake";
 import {CakePageStyled} from "./CakePageStyled";
-import ListCake from "../../componets/listCake/ListCake";
+import ListCake from "../../componets/cakeComponents/listCake/ListCake";
 
 const CakePage = () => {
 

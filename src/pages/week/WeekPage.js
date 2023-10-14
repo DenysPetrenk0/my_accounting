@@ -2,7 +2,8 @@ import React from "react";
 import {WeekPageStyled} from "./WeekPageStyled";
 import colors from "../../style/colors";
 import weekIcon from "./icon/weekIcom.svg";
-import AddCost from "../../componets/addCost/AddCost";
+import AddCost from "../../componets/costComponents/addCost/AddCost";
+import ListCost from "../../componets/costComponents/ListCost/ListCost";
 
 const WeekPage = () => {
   return(
@@ -22,41 +23,9 @@ const WeekPage = () => {
                       </svg>
                   </button>
               </div>
-              <AddCost />
+              <AddCost />x
           </div>
-          <div className="week__content">
-              <div className="week__content__box">
-                  <p className="week__content__title">назва</p>
-                  <p className="week__content__title">загальна сумма</p>
-                  <p className="week__content__title">понеділок</p>
-                  <p className="week__content__title">вівторок</p>
-                  <p className="week__content__title">середа</p>
-                  <p className="week__content__title">четверг</p>
-                  <p className="week__content__title">п'ятниця</p>
-                  <p className="week__content__title">субота</p>
-                  <p className="week__content__title">неділя</p>
-              </div>
-              <form className="week__content__form">
-                  <label className="week__content__form__label">
-                      <div className="week__content__form__name__box">
-                          <p className="week__content__form__name">витрата</p>
-                          <button type="button" className="week__content__form__button-del">
-                              <svg className="week__number__button-arrow__icon" height="17" width="17">
-                                  <use href={weekIcon + "#del"}></use>
-                              </svg>
-                          </button>
-                      </div>
-                      <input type="text" className="week__content__form__input"/>
-                      <input type="text" className="week__content__form__input"/>
-                      <input type="text" className="week__content__form__input"/>
-                      <input type="text" className="week__content__form__input"/>
-                      <input type="text" className="week__content__form__input"/>
-                      <input type="text" className="week__content__form__input"/>
-                      <input type="text" className="week__content__form__input"/>
-                      <input type="text" className="week__content__form__input"/>
-                  </label>
-              </form>
-          </div>
+          <ListCost />
       </WeekPageStyled>
   );
 };
