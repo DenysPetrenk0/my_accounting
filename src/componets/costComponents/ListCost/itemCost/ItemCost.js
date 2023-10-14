@@ -11,11 +11,11 @@ const ItemCost = ({costs, deleteCostOperation}) => {
             <label className="cost__container">
                 <div className="cost__name__box">
                     <p className="cost__name">{cost.cost}</p>
-                    <button type="button" className="cost__button" onClick={() => deleteCostOperation(cost.id)}>
+                    <a href="#" className="cost__button" onClick={() => deleteCostOperation(cost.id)}>
                         <svg className="cost__button__icon" height="17" width="17">
                             <use href={itemCostIcon + "#del"}></use>
                         </svg>
-                    </button>
+                    </a>
                 </div>
                 <input type="text" className="cost__input"/>
                 <input type="text" className="cost__input"/>
